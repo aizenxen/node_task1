@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/1.css">
+</head>
+<body>
+    <% newsList.forEach(news => { %>
+        <p id = "newsTitle"><a href="/news/<%= news.idNews %>"><%= news.titleNews %></a></p>
+        <p id = "newsDescription" ><%= news.descriptionNews %></p>
+        <% }); %>
+</body>
+</html>
